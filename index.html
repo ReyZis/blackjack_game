@@ -1,0 +1,94 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>blackjack game</title>
+</head>
+
+<body>
+
+    <section class="dark">
+        <div class="container">
+            <h2>Blackjack game</h2>
+            <h3><span id="blackjack-result">Let's play</span></h3>
+
+            <div class="flex-blackjack-row-1">
+                <div id="your-box">
+                    <h4>You: <span id="your-blackjack-result">0</span>
+                    </h4>
+                </div>
+
+                <div id="dealer-box">
+                    <h4>Dealer: <span id="dealer-blackjack-result">0</span>
+                    </h4>
+                </div>
+            </div>
+
+            <div class="flex-blackjack-row-2">
+                <div>
+                    <button class="btn mr-2 btn-primary" id="blackjack-hit-button">Hit</button>
+                    <button class="btn mr-2 btn-warning" id="blackjack-stand-button">Stand</button>
+                    <button class="btn mr-2 btn-danger" id="blackjack-deal-button">Deal</button>
+                </div>
+            </div>
+
+
+            <div class="flex-blackjack-row-3">
+                <table>
+                    <tr>
+                        <th>Wins</th>
+                        <th>Losses</th>
+                        <th>Draws</th>
+                    </tr>
+                    <tr>
+                        <td><span id="wins">0</span></td>
+                        <td><span id="losses">0</span></td>
+                        <td><span id="draws">0</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel">how to play:</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>press <strong>hit</strong> to drop your cards.</li>
+                        <li>when you think the dropped cards are enough press <strong>Stand</strong> let the dealer drop his.</li>
+                        <li>when the game is over press <strong>deal</strong> to start the next round</li>
+                        <li>the one who have the closer number to 21 is the winner</li>
+                        <li>you are busted when you pass 21</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!-- my scripts -->
+    <script src="js/script.js"></script>
+    <script src="js/object.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+.container {
+    width: 75%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.flex-blackjack-row-1,
+.flex-blackjack-row-2,
+.flex-blackjack-row-3 {
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.flex-blackjack-row-1,
+.flex-blackjack-row-2 {
+    background: url('./images/blackjack_background.jpg') center;
+}
+
+.flex-blackjack-row-1 div {
+    padding: 10px;
+    text-align: center;
+    flex: 1;
+    height: 350px;
+}
+
+.flex-blackjack-row-1 #your-box {
+    border-right: 1px solid white;
+}
+
+.flex-blackjack-row-1 #dealer-box {
+    border-left: 1px solid black;
+}
+
+.flex-blackjack-row-1 img {
+    width: 25%;
+    padding: 10px;
+}
+
+.flex-blackjack-row-2 button {
+    padding: 10px;
+}
+
+.flex-blackjack-row-2 div {
+    padding: 10px;
+}
+
+table,
+th,
+td {
+    color: white;
+    padding: 5px;
+}
+
+.dark {
+    height: 100%;
+    background-color: #343a40;
+    color: white;
+    padding: 30px;
+}
