@@ -14,9 +14,10 @@
     justify-content: space-around;
 }
 
-.flex-blackjack-row-1,
-.flex-blackjack-row-2 {
-    background: url('./images/blackjack_background.jpg') center;
+.background {
+    background-image: url('./images/blackjack_background.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
 .flex-blackjack-row-1 div {

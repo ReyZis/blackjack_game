@@ -15,27 +15,27 @@
         <div class="container">
             <h2>Blackjack game</h2>
             <h3><span id="blackjack-result">Let's play</span></h3>
+            <div class="background">
+                <div class="flex-blackjack-row-1">
+                    <div id="your-box">
+                        <h4>You: <span id="your-blackjack-result">0</span>
+                        </h4>
+                    </div>
 
-            <div class="flex-blackjack-row-1">
-                <div id="your-box">
-                    <h4>You: <span id="your-blackjack-result">0</span>
-                    </h4>
+                    <div id="dealer-box">
+                        <h4>Dealer: <span id="dealer-blackjack-result">0</span>
+                        </h4>
+                    </div>
                 </div>
 
-                <div id="dealer-box">
-                    <h4>Dealer: <span id="dealer-blackjack-result">0</span>
-                    </h4>
+                <div class="flex-blackjack-row-2">
+                    <div>
+                        <button class="btn mr-2 btn-primary" id="blackjack-hit-button">Hit</button>
+                        <button class="btn mr-2 btn-warning" id="blackjack-stand-button">Stand</button>
+                        <button class="btn mr-2 btn-danger" id="blackjack-deal-button">Deal</button>
+                    </div>
                 </div>
             </div>
-
-            <div class="flex-blackjack-row-2">
-                <div>
-                    <button class="btn mr-2 btn-primary" id="blackjack-hit-button">Hit</button>
-                    <button class="btn mr-2 btn-warning" id="blackjack-stand-button">Stand</button>
-                    <button class="btn mr-2 btn-danger" id="blackjack-deal-button">Deal</button>
-                </div>
-            </div>
-
 
             <div class="flex-blackjack-row-3">
                 <table>
@@ -53,7 +53,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
